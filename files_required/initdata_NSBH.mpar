@@ -1,0 +1,49 @@
+par.initial_sep = 100 # initial separation 
+par.final_sep = 9.0 # final separation 
+par.MM = 1 # total mass 
+par.mass_ratio = 5.0 # mass ratio 
+par.a1x = 0.0 # spin 1 x 
+par.a1y = 0.0 # spin 1 y 
+par.a1z = 0.0 # spin 1 z 
+par.a2x = 0.0 # spin 2 x 
+par.a2y = 0.0 # spin 2 y 
+par.a2z = 0.0 # spin 2 z 
+par.manual_p0 = 0 # calculate momentum manually (eccentric) 
+par.px0 = 0.0 # momentum x 
+par.py0 = 0.0 # momentum y 
+par.pz0 = 0 # momentum z 
+par.fixed_dt = 0 # fixed time step 
+par.dtfac = 25 # 
+par.spinspin = 1 # spin-spin interaction 
+par.radrxn = 1 # radiation interaction 
+par.out_time = 0 # every num of iteration for output 
+par.out_baum_file  = 1     # generate Maya par file with Baum solver
+par.out_rpar_head = 1 # generate head of init file for TwoPunc 
+
+#Inline comments do not always work, so be careful. Stick to separate lines if you can.
+#New IO functions let you be flexible with whitespace, ordering of declarations, and new and improved error messages.
+#
+############################
+#Documentation
+############################
+#par.initial_sep   : Separation of black holes at the start of the simulation
+#par.final_sep     : Separation of black holes when simulation is haulted
+#par.MM            : 
+#par.mass_ratio    : M1/M2, always make mass_ratio >= 1
+#par.a1x           : a1 and a2 are dimensionless spin vectors for each black hole. Make sure the vector has |a|<1
+#par.a1y           : ^
+#par.a1z           : ^
+#par.a2x           : ^
+#par.a2y           : ^
+#par.a2z           : ^
+#par.manual_p0     : 
+#par.px0           : momentum of center of mass. Set to zero for almost all cases
+#par.py0           :
+#par.pz0           :
+#par.fixed_dt      :
+#par.dtfac         :
+#par.spinspin      : 
+#par.radrxn        :
+#par.out_time      :
+#par.out_baum_file :
+#par.out_rpar_head :

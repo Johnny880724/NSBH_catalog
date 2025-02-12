@@ -3,7 +3,7 @@
 ###############################################################
 # Code Unit:               1 M = 8.1 Msun
 # Refinement Levels:       9 (Inside = 1, Outside = 7)
-# Finest Resolution:       0.0117647058823529 M
+# Finest Resolution:       0.00982758620689655 M
 # Final Time:              2000 M
 # Initial Separation:	   9 M (107673.581995101 m)
 # Hydrodynamics Evolution: Whisky
@@ -17,12 +17,12 @@
 # 
 # Star 2
 #   Mass:        	       1.35 Msun = 0.166666666666667 M
-#   Isotropic Radius:	   12013.9790043867 metres = 1.00423310179042 M
-#   Schwarzschild Radius:  14090.5970319965 metres = 1.17781494027533 M
-#   Tidal Radius:          4.12131467740358 M
+#   Isotropic Radius:	   11285.2681289065 metres = 0.943321093993117 M
+#   Schwarzschild Radius:  13367.2280925144 metres = 1.11734945805918 M
+#   Tidal Radius:          3.87133531373035 M
 #   ISCO Radius:          4.12457478565265 M
-#   Central Density:       7.86952533503606e+17 kg/m^3= 0.0836379177708997 1/M^2
-#   Polytropic K:          1.52415790275873
+#   Central Density:       9.23443310538869e+17 kg/m^3= 0.0981442620548898 1/M^2
+#   Polytropic K:          1.42741045572321
 #   Polytropic Gamma:      2
 #   Boost Velocity:        (0.003012235977216, -0.348642716400378, 0)
 #   Boost Momentum:        (0.000502039329536, -0.058107119400063, 0) M
@@ -35,15 +35,15 @@
 
 # Grid structure:
 #	rl	Radius		Resolution								Npoints across Ref Lvl
-#	0 	307.2   	3.01176 	(M/0.332     ,	m1/0.2767    ,	rStar/0.3334    )	 204^3
-#	1 	153.6   	1.50588 	(M/0.6641    ,	m1/0.5534    ,	rStar/0.6669    )	 204^3
-#	2 	38.4    	0.752941	(M/1.328     ,	m1/1.107     ,	rStar/1.334     )	 102^3
-#	3 	19.2    	0.376471	(M/2.656     ,	m1/2.214     ,	rStar/2.667     )	 102^3
-#	4 	9.6     	0.188235	(M/5.312     ,	m1/4.427     ,	rStar/5.335     )	 102^3
-#	5 	4.8     	0.0941176	(M/10.62     ,	m1/8.854     ,	rStar/10.67     )	 102^3
-#	6 	2.4     	0.0470588	(M/21.25     ,	m1/17.71     ,	rStar/21.34     )	 102^3
-#	7 	1.2     	0.0235294	(M/42.5      ,	m1/35.42     ,	rStar/42.68     )	 102^3
-#	8 	0.6     	0.0117647	(M/85        ,	m1/70.83     , ------------- )	 102^3
+#	0 	291.84  	2.51586 	(M/0.3975    ,	m1/0.3312    ,	rStar/0.3749    )	 232^3
+#	1 	145.92  	1.25793 	(M/0.795     ,	m1/0.6625    ,	rStar/0.7499    )	 232^3
+#	2 	36.48   	0.628966	(M/1.59      ,	m1/1.325     ,	rStar/1.5       )	 116^3
+#	3 	18.24   	0.314483	(M/3.18      ,	m1/2.65      ,	rStar/3         )	 116^3
+#	4 	9.12    	0.157241	(M/6.36      ,	m1/5.3       ,	rStar/5.999     )	 116^3
+#	5 	4.56    	0.0786207	(M/12.72     ,	m1/10.6      ,	rStar/12        )	 116^3
+#	6 	2.28    	0.0393103	(M/25.44     ,	m1/21.2      ,	rStar/24        )	 116^3
+#	7 	1.14    	0.0196552	(M/50.88     ,	m1/42.4      ,	rStar/47.99     )	 116^3
+#	8 	0.57    	0.00982759	(M/101.8     ,	m1/84.8      , ------------- )	 116^3
 
 
 ### Base Thorns
@@ -74,15 +74,15 @@ CartGrid3D::domain                      = "full"
 CartGrid3D::avoid_origin                = "no"
 
 CoordBase::domainsize                   = minmax
-CoordBase::xmin                         = -307.2
-CoordBase::ymin                         = -307.2
+CoordBase::xmin                         = -291.84
+CoordBase::ymin                         = -291.84
 CoordBase::zmin                         = 0
-CoordBase::xmax                         = 307.2
-CoordBase::ymax                         = 307.2
-CoordBase::zmax                         = 307.2
-CoordBase::dx                           = 3.0117647058823528994
-CoordBase::dy                           = 3.0117647058823528994
-CoordBase::dz                           = 3.0117647058823528994
+CoordBase::xmax                         = 291.84
+CoordBase::ymax                         = 291.84
+CoordBase::zmax                         = 291.84
+CoordBase::dx                           = 2.5158620689655171176
+CoordBase::dy                           = 2.5158620689655171176
+CoordBase::dz                           = 2.5158620689655171176
 CoordBase::boundary_size_x_lower        = 3
 CoordBase::boundary_size_y_lower        = 3
 CoordBase::boundary_size_z_lower        = 3
@@ -115,7 +115,7 @@ ReflectionSymmetry::avoid_origin_z      = "no"
 
 RunStats::calc_every         = 64
 RunStats::output_mem_every   = 64
-TimerReport::out_every       = 1728
+TimerReport::out_every       = 2048
 TimerReport::out_filename    = "TimerReport"
 
 #############################################################
@@ -136,14 +136,14 @@ CarpetTracker::surface     [0] = 0
 CarpetRegrid2::position_x_1    =  1.5
 CarpetRegrid2::position_y_1    =  0
 CarpetRegrid2::position_z_1    =  0
-CarpetRegrid2::radius_1  [1]  =  153.6
-CarpetRegrid2::radius_1  [2]  =  38.4
-CarpetRegrid2::radius_1  [3]  =  19.2
-CarpetRegrid2::radius_1  [4]  =  9.6
-CarpetRegrid2::radius_1  [5]  =  4.8
-CarpetRegrid2::radius_1  [6]  =  2.4
-CarpetRegrid2::radius_1  [7]  =  1.2
-CarpetRegrid2::radius_1  [8]  =  0.6
+CarpetRegrid2::radius_1  [1]  =  145.92
+CarpetRegrid2::radius_1  [2]  =  36.48
+CarpetRegrid2::radius_1  [3]  =  18.24
+CarpetRegrid2::radius_1  [4]  =  9.12
+CarpetRegrid2::radius_1  [5]  =  4.56
+CarpetRegrid2::radius_1  [6]  =  2.28
+CarpetRegrid2::radius_1  [7]  =  1.14
+CarpetRegrid2::radius_1  [8]  =  0.57
 
 
 CarpetRegrid2::num_levels_2    =  8
@@ -151,13 +151,13 @@ CarpetTracker::surface     [1] = 1
 CarpetRegrid2::position_x_2    =  -7.5
 CarpetRegrid2::position_y_2    =  0
 CarpetRegrid2::position_z_2    =  0
-CarpetRegrid2::radius_2  [1]  =  153.6
-CarpetRegrid2::radius_2  [2]  =  38.4
-CarpetRegrid2::radius_2  [3]  =  19.2
-CarpetRegrid2::radius_2  [4]  =  9.6
-CarpetRegrid2::radius_2  [5]  =  4.8
-CarpetRegrid2::radius_2  [6]  =  2.4
-CarpetRegrid2::radius_2  [7]  =  1.2
+CarpetRegrid2::radius_2  [1]  =  145.92
+CarpetRegrid2::radius_2  [2]  =  36.48
+CarpetRegrid2::radius_2  [3]  =  18.24
+CarpetRegrid2::radius_2  [4]  =  9.12
+CarpetRegrid2::radius_2  [5]  =  4.56
+CarpetRegrid2::radius_2  [6]  =  2.28
+CarpetRegrid2::radius_2  [7]  =  1.14
 
 
 CarpetRegrid2::num_levels_3    =  1
@@ -211,7 +211,7 @@ SphericalSurface::radius[4]        = 1.4
 SphericalSurface::set_spherical[5] = "yes"
 SphericalSurface::ntheta[5]        = 120
 SphericalSurface::nphi[5]          = 90
-SphericalSurface::radius[5]        = 15.0063496526856
+SphericalSurface::radius[5]        = 14.9149816409897
 
 SphericalSurface::set_spherical[6] = "yes"
 SphericalSurface::ntheta[6]        = 120
@@ -255,7 +255,7 @@ MinSearch::extra_variables[0] = "HydroBase::eps"
 MinSearch::weight_variable[0] = "AHMask::AHmasked_weight"
 
 MinSearch::nminima             = 1
-MinSearch::dist_cutoff         = 3.0127 
+MinSearch::dist_cutoff         = 2.82996 
 MinSearch::var                 = "HydroBase::rho" 	
 MinSearch::verbose             = 0
 MinSearch::track_maximum       = "yes"
@@ -296,7 +296,7 @@ Carpet::grid_coordinates_filename = "grid.asc"
 
 CarpetLib::poison_new_memory            = "yes"
 CarpetLib::poison_value                 = 114
-CarpetLib::print_memstats_every         = 1728
+CarpetLib::print_memstats_every         = 2048
 CarpetLib::support_staggered_operators  = "yes"
 
 #############################################################
@@ -372,14 +372,14 @@ BowenID::zero_epsilon = 1e-06
 
 BowenID::compact_object[0] = "black hole"
 BowenID::compact_object[1] = "TOV"
-BowenID::bh_bare_mass[0]    = 0.825175
-BowenID::tov_rho_central[1] = 0.127477393340801
-BowenID::tov_rho_atmosphere[0] = 0.0 #1.27477393340801e-11
-BowenID::tov_rho_atmosphere[1] = 0.0 #1.27477393340801e-11
+BowenID::bh_bare_mass[0]    = 0.825228
+BowenID::tov_rho_central[1] = 0.140092145826389
+BowenID::tov_rho_atmosphere[0] = 0.0 #1.40092145826389e-11
+BowenID::tov_rho_atmosphere[1] = 0.0 #1.40092145826389e-11
 BowenID::object_rx[0] = 1.5
 BowenID::object_rx[1] = -7.5
 BowenID::tov_Gamma[1] = 2
-BowenID::tov_K[1] = 1.52415790275873
+BowenID::tov_K[1] = 1.42741045572321
 BowenID::object_Px[0] = -0.000502039329536
 BowenID::object_Py[0] = 0.058107119400063
 BowenID::object_Pz[0] = 0
@@ -390,7 +390,7 @@ BowenID::object_Pz[1] = 0
 
 HydroBase::initial_hydro = "PrimitiveSolver"
 
-EOS_Polytrope::eos_k = 1.52415790275873
+EOS_Polytrope::eos_k = 1.42741045572321
 EOS_Polytrope::eos_gamma = 2
 EOS_IdealFluid::eos_ideal_fluid_gamma = 2
 
@@ -413,7 +413,7 @@ Whisky::whisky_eos_type      = "General"
 Whisky::whisky_eos_table     = "Ideal_Fluid"
 Whisky::whisky_stencil       = 3
 Whisky::bound                = "flat"
-Whisky::rho_abs_min          = 8.36379177708997e-12
+Whisky::rho_abs_min          = 9.81442620548898e-12
 Whisky::initial_atmosphere_factor  = 0.999
 Whisky::wk_atmosphere        = "no"
 Whisky::recon_method         = "ppm"
@@ -560,7 +560,7 @@ AHFinderDirect::dont_find_after_individual_time[1]   = 10000000000
 # Check for NaNs 
 #############################################################
 
-NaNChecker::check_every = 1728
+NaNChecker::check_every = 2048
 NaNChecker::action_if_found = "terminate" # "just warn", "abort"
 NaNChecker::check_vars = "TmunuBase::stress_energy_vector TmunuBase::stress_energy_tensor TmunuBase::stress_energy_scalar HydroBase::rho HydroBase::press HydroBase::eps HydroBase::vel Kranc2BSSNChiMatter::A_group Kranc2BSSNChiMatter::K Kranc2BSSNChiMatter::chi Kranc2BSSNChiMatter::h_group Kranc2BSSNChiMatter::beta_group Kranc2BSSNChiMatter::Gam_group Kranc2BSSNChiMatter::betat_group"
 NaNChecker::verbose = "all"
@@ -577,12 +577,12 @@ VolumeIntegrals_GRMHD::verbose                        = 1
  
 VolumeIntegrals_GRMHD::integration_quantity_keyword[1] = "centerofmass" 
 VolumeIntegrals_GRMHD::volintegral_sphere__center_x_initial [1]      =  -7.5 
-VolumeIntegrals_GRMHD::volintegral_inside_sphere__radius    [1]      = 1.20507972214851 
+VolumeIntegrals_GRMHD::volintegral_inside_sphere__radius    [1]      = 1.13198531279174 
 VolumeIntegrals_GRMHD::volintegral_sphere__tracks__amr_centre[1] = 1  
  
 VolumeIntegrals_GRMHD::integration_quantity_keyword[2] = "restmass" 
 VolumeIntegrals_GRMHD::volintegral_sphere__center_x_initial [2]      =  -7.5 
-VolumeIntegrals_GRMHD::volintegral_inside_sphere__radius    [2]      = 1.20507972214851 
+VolumeIntegrals_GRMHD::volintegral_inside_sphere__radius    [2]      = 1.13198531279174 
 VolumeIntegrals_GRMHD::volintegral_sphere__tracks__amr_centre[2] = 1  
  
 VolumeIntegrals_GRMHD::integration_quantity_keyword[3] = "restmass" 
@@ -612,7 +612,7 @@ VolumeIntegrals_GRMHD::volintegral_outside_sphere__radius    [7]      = 35
 #############################################################
 
 TotalRestMass::dDdt_variable         = "Whisky::densrhs"
-TotalRestMass::rho_min               = 8.36379177708997e-12 
+TotalRestMass::rho_min               = 9.81442620548898e-12 
 TotalRestMass::intvolumes          = 6
 TotalRestMass::int_wi_rad[0]      = 0.7
 TotalRestMass::centre_x[0]        = 0.0 
@@ -620,7 +620,7 @@ TotalRestMass::centre_x[0]        = 0.0
 TotalRestMass::int_wi_rad[1]      = 1.4
 TotalRestMass::centre_x[1]        = 0.0 
  
-TotalRestMass::int_wi_rad[2]      = 15.0063496526856
+TotalRestMass::int_wi_rad[2]      = 14.9149816409897
 TotalRestMass::centre_x[2]        = 0.0 
  
 TotalRestMass::int_wi_rad[3]      = 25
@@ -674,8 +674,8 @@ Ylm_Decomp::l_mode                   = 8
 Ylm_Decomp::m_mode                   = 8
 Ylm_Decomp::interpolation_operator   = "Lagrange polynomial interpolation"
 Ylm_Decomp::interpolation_order      = 4
-Ylm_Decomp::ntheta                   = 240
-Ylm_Decomp::nphi                     = 480
+Ylm_Decomp::ntheta                   = 280
+Ylm_Decomp::nphi                     = 560
 
 WeylScal4::offset                    = 1e-8
 WeylScal4::fd_order                  = "4th"
@@ -713,8 +713,8 @@ Psi4Analysis::out_every_det[9]         = 64
 
 Psi4Analysis::interpolator_name   = "Lagrange polynomial interpolation"
 Psi4Analysis::interpolator_pars      = "order=4"
-Psi4Analysis::maxntheta                   = 240
-Psi4Analysis::maxnphi                     = 480
+Psi4Analysis::maxntheta                   = 280
+Psi4Analysis::maxnphi                     = 560
 
 
 #######################V######################################
@@ -723,10 +723,10 @@ Psi4Analysis::maxnphi                     = 480
 
 ADM_EJP::number_of_detectors   = 4
 ADM_EJP::out_every             = 64
-ADM_EJP::detector_radius[0]   = 12.0126993053713
-ADM_EJP::detector_radius[1]   = 61.2105827544761
-ADM_EJP::detector_radius[2]   = 110.408466203581
-ADM_EJP::detector_radius[3]   = 159.606349652686
+ADM_EJP::detector_radius[0]   = 11.8299632819793
+ADM_EJP::detector_radius[1]   = 58.4983027349828
+ADM_EJP::detector_radius[2]   = 105.166642187986
+ADM_EJP::detector_radius[3]   = 151.83498164099
 ADM_EJP::interpolator_name        = "Lagrange polynomial interpolation"
 ADM_EJP::interpolator_pars        = "order=4"
 ADM_EJP::ntheta                   = 120
@@ -817,10 +817,10 @@ CarpetIOScalar::outScalar_every      = 32
 CarpetIOScalar::outScalar_reductions = "minimum maximum norm2"
 CarpetIOScalar::outScalar_vars       = " HydroBase::eps  HydroBase::rho Whisky::w_lorentz Kranc2BSSNChiMatter::bssnham Kranc2BSSNChiMatter::bssnmom_group Kranc2BSSNChiMatter::K Kranc2BSSNChiMatter::chi QuasiLocalMeasures::qlm_scalars[0]"
 
-CarpetIOASCII::out0D_every           = 0  #13312
+CarpetIOASCII::out0D_every           = 0  #16384
 CarpetIOASCII::out0D_vars            = "Carpet::timing"
 
-CarpetIOASCII::out1D_every           = 13312
+CarpetIOASCII::out1D_every           = 16384
 CarpetIOASCII::out1D_x               = "yes"
 CarpetIOASCII::out1D_y               = "yes"
 CarpetIOASCII::out1D_z               = "no"
@@ -830,7 +830,7 @@ CarpetIOASCII::out_precision         = 7
 
 CarpetIOHDF5::compression_level      = 0
 IO::out_single_precision             = "yes"
-CarpetIOHDF5::out2D_every            = 832
+CarpetIOHDF5::out2D_every            = 1024
 CarpetIOHDF5::out2D_xy               = "yes"
 CarpetIOHDF5::out2D_xz               = "no"
 CarpetIOHDF5::out2D_yz               = "no"

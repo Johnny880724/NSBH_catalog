@@ -11,3 +11,10 @@ venv/
 
 # Ignore other files
 *.log
+
+NSBH_BYID/rpar/*_Broyden_C19.par
+NSBH_BYID/rpar/NSBH_production.rpar
+NSBH_BYID/rpar/NSBH_ID_Python.rpar
+NSBH_BYID/rpar/NSBH_Evolution_Python.rpar
+NSBH_BYID/johnny_rpar/*
+NSBH_BYID/NSBH_BYID_rpar.ipynb

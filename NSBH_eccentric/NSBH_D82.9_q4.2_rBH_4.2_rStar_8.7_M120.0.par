@@ -764,13 +764,13 @@ CarpetIOASCII::out_precision         = 7
 
 CarpetIOHDF5::compression_level      = 0
 IO::out_single_precision             = "yes"
-CarpetIOHDF5::out2D_every            = 128
+CarpetIOHDF5::out2D_every            = 0
 CarpetIOHDF5::out2D_xy               = "yes"
 CarpetIOHDF5::out2D_xz               = "yes"
 CarpetIOHDF5::out2D_yz               = "yes"
 CarpetIOHDF5::out2d_vars             = " HydroBase::eps HydroBase::rho Whisky::w_lorentz HydroBase::vel ADMBase::lapse Kranc2BSSNChiMatter::K Kranc2BSSNChiMatter::chi  WeylScal4::Psi4r  AHMask::AHMasked_weight"
 
-CarpetIOHDF5::out_every              = 128
+CarpetIOHDF5::out_every              = 0
 CarpetIOHDF5::out_vars               = " HydroBase::eps HydroBase::rho Whisky::w_lorentz HydroBase::vel WeylScal4::Psi4r  AHMask::AHMasked_weight"
 CarpetIOHDF5::one_file_per_group     = "no"
 
